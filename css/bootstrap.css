@@ -12054,4 +12054,15 @@ textarea.form-control-lg {
   }
 }
 
+h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /*# sourceMappingURL=bootstrap.css.map */

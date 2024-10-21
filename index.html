@@ -2,33 +2,133 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Eletrõnicos</title>
+    <title>Loja de Eletrônicos</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
+    <!-- Inicio do menu navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary container-fluid">
-    </nav>
-
-    <header class="container mt-5">
-        <h1>Loja de Eletrõnicos</h1>
-    </header>
-    <main>
-        <h2>Produtos em Destaque</h2>
-        <div class="row">
-            <div class="col-sm-4">
-            </div>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Loja</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>  
+            </ul>           
+          </div>
         </div>
-        <section></section>
-        <section></section>
+    </nav>
+    <!-- Fim do menu -->
+    <header class="container mt-5">
+        <h1>Loja de Eletrônicos</h1>
+    </header>
+    <main class="container mt-4">        
+        <section>
+            <h2>Produtos em Destaque</h2>
+            <div class="row">
+                <div class="col-sm-4">
+                  <div class="card">
+                    <img src="img/90_computador_completo_bestpc_intel_i5_8gb_hd_500gb_monitor_15_windows_10_5647_1_6eeba8d509ef31129e52219765f5f300.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        COMPUTADOR COMPLETO BESTPC INTEL I5 8GB HD 500GB MONITOR 15" WINDOWS 10</h5>
+                      <p class="card-text">Contando com um processador Intel Core i7, este dispositivo assegura o desempenho necessário para lidar com várias tarefas simultaneamente. Além do hardware avançado, proporcionando total satisfação, vem equipado com o excepcional sistema operacional da Microsoft, o Windows 10 Trial.</p>
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProduto1">Veja mais detelhes...</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="card">
+                    <img src="img/300Wx300H-productCard-18727-zero.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">APPLE IPHONE 15 PLUS 128GB </h5>
+                      <p class="card-text">O iPhone tem recursos integrados de acessibilidade, como Lupa, VoiceOver e o Acesso Assistivo, que ajuda pessoas com deficiências cognitivas a personalizar apps e experiências.
+
+                    </p>
+                      <a href="#" class="btn btn-primary">Veja mais detelhes...</a>
+                    </div>
+                  </div> 
+                </div>
+                <div class="col-sm-4">
+                  <div class="card">
+                    <img src="img/tablet_tela_10_5_polegadas_galaxy_tab_a_t510n_10_1p_sm_t510nz_1566925357_9725_300x300.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Tablet Tela 10.5 Polegadas Galaxy </h5>
+                      <p class="card-text">Tablet tela 10.5 polegadas galaxy tab a t510n 10.1p sm-t510nzspzto samsung formato do aparelho barra interface com o usuário touch screen sistema operacional + versão android 9.1 plataforma 64 bits loja de aplicativos play store / galaxy apps .</p>
+                      <a href="#" class="btn btn-primary">Veja mais detelhes...</a>
+                    </div>
+                  </div>
+                </div> 
+            </div>
+        </section>
+
+        <!-- Modal do Produto 1 -->
+        <!-- Modal -->
+        <div class="modal fade" id="modalProduto1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalProduto1Label">COMPUTADOR COMPLETO BESTPC INTEL I5 8GB HD 500GB MONITOR 15" WINDOWS 10</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Monitor 
+        Tamanho da Tela: 15 Widescreen 
+        Brilho: 250cd/m2
+        Contraste mínimo: 1.000:1(tipico) || 5.000.000:1 (dinâmico)
+        Pixel Pitch: 0,2712*RGB (H) mm x 0,2626 (V) mm
+        Tempo de resposta: 5ms
+        Resolução: HD
+        LED
+         Entrada de vídeo: HDMI, VGA
+        Energia: Bivolt (AC 100-240V)
+        Furação VESA na parte traseira
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>                
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <section>
+          <h2>Formulario de Contato</h2>
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </section>
     </main>
-    <footer>
+    <footer class="container-fluid">
         <p>&copy; 2024 Loja de Eletrônicos</p>
     </footer>
 
-
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
-    
 </body>
 </html>
